@@ -1,0 +1,399 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Open the application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5903759600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch the SwagLab application",
+            "match": {
+              "location": "LoginSteps.launch_the_SwagLab_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-17T13:56:43.703Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2145647600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.SetUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Verify Login functionality with valid username and password",
+        "description": "",
+        "id": "this-feature-is-used-to-design-the-login-function-of-the-application;verify-login-functionality-with-valid-username-and-password;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 93388800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 205830400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter valid username \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginSteps.enter_valid_username(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 131648500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Enter valid password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginSteps.enter_valid_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 129754400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click on login button",
+            "match": {
+              "location": "LoginSteps.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1052800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user should land on the home page",
+            "match": {
+              "location": "LoginSteps.user_should_land_on_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Open the application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6085410200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch the SwagLab application",
+            "match": {
+              "location": "LoginSteps.launch_the_SwagLab_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-17T13:56:52.333Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1311541900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.SetUp()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Verify the error message with invalid username and password",
+        "description": "",
+        "id": "this-feature-is-used-to-design-the-login-function-of-the-application;verify-the-error-message-with-invalid-username-and-password;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 78314500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 101732600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Enter valid username \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginSteps.enter_valid_username(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 80758000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Enter invalid password \"secretsauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"secretsauce\"",
+                  "offset": 23
+                }
+              ],
+              "location": "LoginSteps.enter_invalid_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66743600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "click on login button",
+            "match": {
+              "location": "LoginSteps.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37368400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "error message appears \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginSteps.error_message_appears(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "This feature is used to design the Login function of the application",
+    "description": "",
+    "id": "this-feature-is-used-to-design-the-login-function-of-the-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "User should be logged in successfully",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3828558000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User has launched the swag application",
+            "match": {
+              "location": "ProductSteps.user_has_launched_the_swag_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 156162900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Enter the username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 48
+                }
+              ],
+              "location": "ProductSteps.enter_the_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 119396800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on login button",
+            "match": {
+              "location": "ProductSteps.click_on_login_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-17T13:57:00.104Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1359466300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.SetUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Verify the price of the products",
+        "description": "",
+        "id": "user-is-on-the-home-page-and-validate-the-price-of-the-products;verify-the-price-of-the-products",
+        "after": [
+          {
+            "result": {
+              "duration": 125247300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 656400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is logged in successfully and is on products page",
+            "match": {
+              "location": "ProductSteps.user_is_logged_in_successfully_and_is_on_products_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 101414800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Validate the product and its price",
+            "match": {
+              "location": "ProductSteps.validate_the_product_and_its_price(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Sauce Labs Backpack",
+                  "$29.99"
+                ]
+              },
+              {
+                "cells": [
+                  "Sauce Labs Bike Light",
+                  "$9.99"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "User is on the home page and validate the price of the products",
+    "description": "",
+    "id": "user-is-on-the-home-page-and-validate-the-price-of-the-products",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/product.feature",
+    "tags": []
+  }
+]
